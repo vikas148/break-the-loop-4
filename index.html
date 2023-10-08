@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge: Hacker Edition</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url('hacker-background.jpg'); /* Add your hacker-themed background image here */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+
+        pre {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for code */
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Monaco, monospace;
+            font-size: 14px;
+            color: #0f0;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hacker's CTF Challenge</h1>
+    </header>
+    <div class="container">
+        <h2>Challenge Description</h2>
+        <p>
+            Welcome, fellow hacker! Crack this challenge and prove your skills. Decrypt the hidden message to claim your victory.
+        </p>
+        <h2>Challenge Code</h2>
+        <pre>
+            <code>
+                // Hacker's code goes here
+                // Example code:
+                const secretMessage = "Vg'f lbh zbir gur choyvp yrggre?";
+                const decodedMessage = secretMessage.replace(/[a-zA-Z]/g, function(c) {
+                    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                });
+                console.log("Decoded message: " + decodedMessage);
+            </code>
+        </pre>
+    </div>
+    <footer>
+        &copy; 2023 Hacker's CTF Challenge
+    </footer>
+</body>
+</html>
